@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>樹屋書店清單 Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow p-4 sticky top-0 z-10">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">樹屋書店平台</h1>
+      <nav class="space-x-4 text-blue-600 font-medium">
+        <a href="#info">書店資訊</a>
+        <a href="#facility">設施</a>
+        <a href="#rooms">房型</a>
+        <a href="#location">位置</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto mt-6">
+    <!-- 書店 Banner -->
+    <section class="rounded-lg overflow-hidden shadow-md">
+      <img src="https://i.ibb.co/1fG526BT/Screenshot-2025-07-12-at-3-48-29-PM.png" alt="樹屋書店主圖" class="w-full object-cover h-64">
+    </section>
+
+    <!-- 書店基本資訊 -->
+    <section id="info" class="mt-6">
+      <h2 class="text-2xl font-semibold mb-2">貓村裡的樹屋書店</h2>
+      <p class="text-gray-600">台灣，新竹市東區光復路二段18巷17號</p>
+    </section>
+
+    <!-- 設施 -->
+    <section id="facility" class="mt-8">
+      <h3 class="text-xl font-bold mb-3 text-blue-600">書店設施</h3>
+      <ul class="grid grid-cols-2 gap-2 text-sm text-gray-700">
+        <li>📚 閱讀區</li>
+        <li>☕ 咖啡酒吧</li>
+        <li>🛏️ 過夜床位</li>
+        <li>🛁 淋浴設備</li>
+        <li>🎨 藝文活動空間</li>
+        <li>🐈 店貓陪伴</li>
+        <li>🍽️ 餐點供應</li>
+        <li>🪴 戶外花園</li>
+      </ul>
+    </section>
+
+    <!-- 房型 -->
+    <section id="rooms" class="mt-8">
+      <h3 class="text-xl font-bold mb-3 text-blue-600">房型</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white rounded shadow p-4">
+          <img src="/images/room1.jpg" alt="房型1" class="rounded mb-2">
+          <h4 class="font-semibold">樹屋床位（一晚）</h4>
+          <p class="text-gray-600 text-sm">單人上下舖床位</p>
+          <p class="text-red-500 font-bold mt-1">NT$ 750 起</p>
+        </div>
+        <div class="bg-white rounded shadow p-4">
+          <img src="/images/room2.jpg" alt="房型2" class="rounded mb-2">
+          <h4 class="font-semibold">雙人閱讀套房</h4>
+          <p class="text-gray-600 text-sm">適合情侶、朋友</p>
+          <p class="text-red-500 font-bold mt-1">NT$ 1980 起</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 地圖位置 -->
+    <section id="location" class="mt-8 mb-12">
+      <h3 class="text-xl font-bold mb-3 text-blue-600">位置</h3>
+
+      <!-- 營業資訊 -->
+      <div class="bg-white rounded shadow p-4 mb-4 text-gray-800">
+        <p class="font-medium">樹屋書店 - 貓村店</p>
+        <p>地址：新竹市東區光復路二段18巷17號</p>
+        <p>營業時間：每日 11:30 - 24:00</p>
+        <a href="https://maps.google.com/?q=樹屋書店-貓村店 Treehouse Book&Bed Cat Village"
+           target="_blank"
+           class="inline-block mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+          👉 在 Google 地圖中開啟導航
+        </a>
+      </div>
+
+      <!-- 嵌入地圖 -->
+      <div class="w-full h-64 rounded overflow-hidden shadow">
+        <iframe class="w-full h-full"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.193190175015!2d120.97266!3d24.80049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346835fead7a2f7f%3A0x9c9f37e64f2847c7!2z5paw5YyX5Li75LiA5q61!5e0!3m2!1szh-TW!2stw!4v1721875852226"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white text-sm py-6">
+    <div class="max-w-5xl mx-auto text-center space-y-2">
+      <div>
+        <a href="https://www.facebook.com/share/14FK8mscwhD/?mibextid=wwXIfr" class="inline-block mx-2" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook" />
+        </a>
+        <a href="https://www.instagram.com/treehouse_book_bed?igsh=enA2M2dnenh3dHJs" class="inline-block mx-2" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram" />
+        </a>
+        <a href="https://youtube.com/shorts/Ujk4k56kicc?si=bk-_Q2LbFnTOLvbO" class="inline-block mx-2" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/youtube-play.png" alt="YouTube" />
+        </a>
+        <a href="https://page.line.me/337rtoxr" class="inline-block mx-2" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/line-me.png" alt="LINE" />
+        </a>
+      </div>
+      <div>
+        © 2025 貓村裡的樹屋書店｜聯絡客服：03-1234-5678
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
